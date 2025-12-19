@@ -1,6 +1,7 @@
 using System;
 using Unity.Cinemachine;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using Random = System.Random;
 
 public class Ball : MonoBehaviour
@@ -131,6 +132,11 @@ public class Ball : MonoBehaviour
         if (other.gameObject.CompareTag("saw"))
         {
             VolumeLoss();
+        }
+
+        if (other.gameObject.CompareTag("Finish"))
+        {
+            SceneManager.LoadScene("Finish");
         }
         
     }

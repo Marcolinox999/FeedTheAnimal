@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class Timer : MonoBehaviour
 {
-    private float timer = 180;
+    private float timer= 60;
     public int prettyTimer;
     private TextMeshProUGUI textMeshProUGUITimer;
     private TextMeshProUGUI textMeshProUGUIScore;
